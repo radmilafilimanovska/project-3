@@ -1,33 +1,509 @@
-.App {
-  text-align: center;
+body{
+    background-color: black;
+    line-height: 1.3;
+    height: 100vh;
+    overflow: hidden;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btnSearch{
+    float:right;
+    border:none;
+    background-color: transparent;
+   }
+.fa-search{
+       color:gray;
+   }
+.circle{
+    color:rgb(163, 156, 156);
+    margin:3px;
+    border:1px solid grey;
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+    background-color:transparent;
   }
-  to {
-    transform: rotate(360deg);
+.footer{
+    display:flex;
+    justify-content: space-between;
   }
+.left{
+    margin-left:30px;
+  }
+.en{
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 4px;
+  }
+.insta{
+    background-image: linear-gradient(to top right, rgb(245, 182, 9), rgb(190, 42, 141) )
+  }
+.fb{
+    background-color:blue;
+  }
+a{
+    color:white;
+  }
+a:hover{
+    color:white;
+  }
+.Element{
+    width: 5.3vw;
+    height: 9vh;
+    border: 1px solid black;
+    padding: 0px 2px;
+}
+.number{
+    font-weight: bold;
+    font-size: 8px;
+}
+.shells{
+    font-size: 8px;
+}
+.symbol{
+    font-weight: bold;
+    font-size: 14px;
+}
+.name{
+    font-size: 10px;
+}
+.mass{
+    padding-top:5px;
+    font-size:10px;
+}
+.padding5 {
+    padding: 5px;
+    display:grid;
+    grid-template-columns: repeat(17, auto) 1fr;
+    margin-bottom: -100px;
+    margin-top: 50px;
+}
+.element-1, .element-6, .element-7, .element-8, .element-15, .element-16, .element-34{
+    background-color: rgb(218, 112, 63);
+}
+.element-3, .element-11, .element-19, .element-37, .element-55, .element-87{
+    background-color: rgb(49, 177, 219);
+}
+.element-4, .element-12, .element-20, .element-38, .element-56, .element-88{
+    background-color: aquamarine;
+}
+.element-5, .element-14, .element-32, .element-33, .element-51, .element-52, .element-84{
+    background-color: lightpink;
+}
+.element-13, .element-31, .element-49, .element-50, .element-81, .element-82, .element-83, .element-113, .element-114, .element-115, .element-116{
+    background-color: rgb(238, 215, 218);
+}
+.element-2, .element-10, .element-18, .element-36, .element-54, .element-86, .element-118{
+    background-color: lightblue;
+}
+.element-89, .element-90, .element-91, .element-92, .element-93, .element-94, .element-95, .element-96, .element-97, .element-98, .element-99, .element-100, .element-101, .element-102, .element-103{
+    background-color: rgb(152, 163, 167);
+}
+.element-21, .element-22, .element-23, .element-24, .element-25, .element-26, .element-27, .element-28, .element-29, .element-30, .element-39, .element-40, .element-41, .element-42, .element-43, .element-44, .element-45, .element-46, .element-47, .element-48, .element-72, .element-73, .element-74, .element-75, .element-76, .element-77, .element-78, .element-79, .element-80, .element-104, .element-105, .element-106, .element-107, .element-108, .element-109, .element-110, .element-111, .element-112 {
+    background-color: white;
+}
+.element-57, .element-58, .element-59, .element-60, .element-61, .element-62, .element-63, .element-64, .element-65, .element-66, .element-67, .element-68, .element-69, .element-70, .element-71{
+    background-color: rgb(201, 198, 198);
+}
+.element-9, .element-17, .element-35, .element-53, .element-85, .element-117{
+    background-color: rgb(250, 250, 194);
+}
+.element-89, .element-90, .element-91, .element-92, .element-93, .element-94, .element-95, .element-96, .element-97, .element-98, .element-99, .element-100, .element-101, .element-102, .element-103{
+    grid-row-start: 9;
+    margin-bottom: 30px;
+}
+.element-57, .element-58, .element-59, .element-60, .element-61, .element-62, .element-63, .element-64, .element-65, .element-66, .element-67, .element-68, .element-69, .element-70, .element-71{
+    grid-row-start:8;
+    margin-top: 30px;
+}
+.element-2 {
+    grid-column-start: -2;
+}
+.element-5, .element-13, .element-81 {
+    grid-column-start: 13;
+}
+.element-72{
+    grid-column-start: 4;
+    grid-row-start: 6;
+}
+.element-71, .element-117, .element-103{
+    grid-column-start: 17;
+}
+.element-116, .element-70, .element-102{
+    grid-column-start: 16;
+}
+.element-115, .element-69, .element-101{
+    grid-column-start: 15;
+}
+.element-114, .element-68, .element-100{
+    grid-column-start: 14;
+}
+.element-113, .element-67, .element-99{
+    grid-column-start: 13;
+}
+.element-80, .element-112, .element-66, .element-98{
+    grid-column-start: 12;
+}
+.element-79, .element-111, .element-65, .element-97{
+    grid-column-start: 11;
+}
+.element-78, .element-110, .element-64, .element-96{
+    grid-column-start: 10;
+}
+.element-77, .element-109, .element-63, .element-95{
+    grid-column-start: 9;
+}
+.element-76, .element-108, .element-62, .element-94{
+    grid-column-start: 8;
+}
+.element-75, .element-107, .element-61, .element-93{
+    grid-column-start: 7;
+}
+.element-74, .element-106, .element-60, .element-92{
+    grid-column-start: 6;
+}
+.element-91, .element-59, .element-105, .element-73{
+    grid-column-start: 5;
+}
+.element-58, .element-104, .element-90{
+    grid-column-start: 4;
+}
+.element-57, .element-89{
+    grid-column-start: 3;
+}
+.lan{
+    padding-top: 5px;
+    grid-column-start: 3;
+    grid-row-start: 6;
+    color: white;
+}
+.act{
+    padding-top: 5px;
+    grid-column-start: 3;
+    grid-row-start: 7;
+    color: white; 
+}
+.text-small{
+    font-size: 14px;
+}
+.legend{
+    grid-column-start: 3;
+    grid-row-start:2;
+    grid-column-end: 13;
+    grid-row-end: 4;
+    color: rgb(152, 163, 167);
+}
+.AL{
+    color: rgb(49, 177, 219);
+}
+.AEM{
+    color: aquamarine;
+}
+.L{
+    color: rgb(201, 198, 198);
+}
+.AC{
+    color: rgb(152, 163, 167);
+}
+.OM{
+    color: rgb(238, 215, 218);
+}
+.M{
+ color: lightpink;   
+}
+.NM{
+    color:rgb(218, 112, 63);
+}
+.H{
+    color:rgb(250, 250, 194);
+}
+.NB{
+    color:lightblue;
+}
+.padding-left{
+    padding-left: 25px;
+}
+.font{
+    font-size: 10px;
+}
+.bor{
+    border-top: 1px solid gray;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.btnData{
+    color: lightgray;
+    border:none;
+    background-color: transparent;
+}
+.numbers{
+    position: relative;
+}
+.btn-1{
+    position: absolute;
+    top:20px;
+    left: 30px;
+}
+.btn-2{
+    position:absolute;
+    top: 90px;
+    left: 115px;
+}
+.btn-3{
+    position: absolute;
+    top: 230px;
+    left: 195px;
+}
+.btn-4{
+    position: absolute;
+    top: 230px;
+    left: 280px;
+}
+.btn-5{
+    position: absolute;
+    top: 230px;
+    left: 360px;
+}
+.btn-6{
+    position: absolute;
+    top: 230px;
+    left: 440px;
+}
+.btn-7{
+    position: absolute;
+    top: 230px;
+    left: 520px;
+}
+.btn-8{
+    position: absolute;
+    top: 230px;
+    left: 600px;
+}
+.btn-9{
+    position: absolute;
+    top: 230px;
+    left: 680px;
+}
+.btn-10{
+    position: absolute;
+    top: 230px;
+    left: 760px;
+}
+.btn-11{
+    position: absolute;
+    top: 230px;
+    left: 840px;
+}
+.btn-12{
+    position: absolute;
+    top: 230px;
+    left: 920px;
+}
+.btn-13{
+    position: absolute;
+    top: 90px;
+    left: 1005px;
+}
+.btn-14{
+    position: absolute;
+    top:90px;
+    left:1085px;
+}
+.btn-15{
+    position: absolute;
+    top: 90px;
+    left: 1165px;
+}
+.btn-16{
+    position: absolute;
+    top: 90px;
+    left: 1245px;
+}
+.btn-17{
+    position: absolute;
+    top: 90px;
+    left: 1330px;
+}
+.btn-18{
+    position: absolute;
+    top: 20px;
+    left: 1410px;
+}
+.footerLevo{
+    grid-column-start: 1;
+    grid-row-end: 10;
+}
+.footerDesno{
+    grid-column-start: 18;
+    grid-row-start: 9;
+}
+.element-1-1, .element-2-2, .element-3-3, .element-4-4, .element-5-5, .element-6-6, .element-7-7, .element-8-8, .element-9-9, .element-10-10, .element-11-11, .element-12-12, .element-13-13, .element-14-14, .element-15-15, .element-16-16, .element-17-17, .element-18-18{
+    transform: scale(1.1);
+}
+.btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-4:hover, .btn-5:hover, .btn-6:hover, .btn-7:hover, .btn-8:hover, .btn-9:hover, .btn-10:hover, .btn-11:hover, .btn-12:hover, .btn-13:hover, .btn-14:hover, .btn-15:hover, .btn-16:hover, .btn-17:hover, .btn-18:hover{
+    color: white;
+    transform: scale(1.3);     
+}
+.Name{
+    width:25%;
+}
+.namename{
+    width: 40%;
+    height: 20vh;
+    color: white;
+    border: 1px solid white;
+}
+.fontForSquare{
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.fontForSquareSymbol{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.colorWhite{
+    color: white;
+    margin: 0;
+    padding: 3px;
+}
+.unordered{
+    list-style: none;
+    padding: 0
+}
+.ulList{
+    margin-top: 20px;
+}
+.wrapperImage{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+.imgName{
+    width: 70px;
+    height: 70px;
+    position: 'center';
+}
+.nameOfElement{
+    color: white;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 'bold'
+}
+.text{
+    width: 40%;
+}
+.btnText{
+    float: right;
+    margin-bottom: 40px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+.textText{
+    margin-top: 50px;
+    color: white;
+}
+.textPdf{
+    float: right;
+    margin-top: 30px;
+    color: white;
+}
+.searchMain{
+    padding: 10px;
+    overflow: scroll;
+    width: 25%;
+    margin-left: 125px;
+    color: white;
+    height: 90vh;
+}
+.widthPic, .carousel{
+    width: 50%;
+}
+
+.inputSearch{
+    width: 100%;
+    background-color: rgb(54, 53, 53);
+    border: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.ButtonX{
+margin: 20px 10px;
+}
+.btnX{
+background-color: transparent;
+border: 1px solid gray;
+color: gray;
+}
+.Element .hidden{
+    visibility: hidden;
+}
+.hov:hover{
+    transform: scale(1.1);
+}
+iframe{
+    width: 100%;
+    height: calc(100% - 30px);
+}
+.buttonModal{
+    float: right;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: white;
+    margin-bottom: 5px;
+}
+.ReactModal__Overlay{
+    background-color: transparent !important;
+}
+.FooterRight{
+    width: 7%;
+    float: right;
+}
+.FooterLeft{
+    width: 5%;
+    float:left;
+    margin-left: 48px;
+}
+.marginplus{
+    margin-top: 7px
+}
+.About img{
+    width: 100%;
+    height: 120%;
+    position: relative;
+    top: 140px;
+}
+.textAboutDiv{
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+.textAbout{
+    font-weight: bold;
+    color:rgb(218, 206, 104);
+}
+.colorWhite{
+    color: white;
+}
+.ui{
+    float: right;
+    height: 30px;
+    /* margin-top: 10px; */
+}
+#search-site{
+    background-color: black;
+    width: 220px;
+    height: 37px;
+    font-size: 18px;
+}
+.fa-search{
+    margin-right: 38px;
+    margin-top: 7px;
+}
+#caption{
+    margin-bottom: -16px;
+    margin-top: 20px;
 }
